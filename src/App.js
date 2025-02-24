@@ -15,7 +15,7 @@ const App = () => {
   const [places, setPlaces] = useState([]);
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyAKJ4ydlFnla47b2l0Cy6PRcw5xVKiw26Q',
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries,
   });
 
